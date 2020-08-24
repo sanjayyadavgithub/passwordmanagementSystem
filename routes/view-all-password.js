@@ -1,3 +1,6 @@
+
+//change-----------------
+
 var express = require('express');
 var router = express.Router();
 var userModule = require('../modules/user');
@@ -115,4 +118,5 @@ router.get('/:page', checkLoginUser, function (req, res, next) {
 
 
 
-module.exports = router;
+module.exports = router; 
+

@@ -1,5 +1,8 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/pms', {
+const url = "mongodb+srv://reactShop:reactShop@reactshop.f33ot.mongodb.net/pms?retryWrites=true&w=majority";
+
+//const url = 'mongodb://localhost:27017/pms';
+mongoose.connect(url, {
     useNewUrlParser: true,
     useCreateIndex: true,
 });

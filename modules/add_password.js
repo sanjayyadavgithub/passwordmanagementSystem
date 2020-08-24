@@ -1,9 +1,14 @@
 const mongoose = require('mongoose');
+
+//const url = 'mongodb://localhost:27017/pms';
+const url = "mongodb+srv://reactShop:reactShop@reactshop.f33ot.mongodb.net/pms?retryWrites=true&w=majority";
 var mongoosePaginate = require('mongoose-paginate');
-mongoose.connect('mongodb://localhost:27017/pms', {
+
+mongoose.connect(url, {
     useNewUrlParser: true,
-    useCreateIndex: true,
+    useCreateIndex : true,
 });
+//console.log(connect);
 var conn = mongoose.Collection;
 var passSchema = new mongoose.Schema({
     password_category: {
